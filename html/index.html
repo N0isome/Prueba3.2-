@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <ul>
+        {% for producto in productos %}
+        <li>{{ producto.nombre }} - ${{ producto.precio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="span">
+   <head>
+      
+
+      
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      
+      <title>PetVentas</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+      <link rel="stylesheet" href="css/style.css">
+      
+      <link rel="stylesheet" href="css/responsive.css">
+      
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   </head>
+   
+   <body class="main-layout">
+      
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      
+      
+      <header>
+         
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="logo pet.png" alt="#"><img src="images/LogoFinal_2.png" style="width: 90px; height: 90px"; /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item ">
+                                 <a class="nav-link" href="index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="Nosotros.html">Acerca de</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="Productos.html">Productos</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="Tienda.html">Tienda</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="Contacto.html">Contacto</a>
+                              </li>
+                              <li class="nav-item d_none login_btn">
+                                 <a class="nav-link" href="#">Iniciar_sesión</a>
+                              </li>
+                              <li class="nav-item d_none">
+                                 <a class="nav-link" href="#">Registrate</a>
+                              </li>
+                              <li class="nav-item d_none sea_icon">
+                                 <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+     
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="text-bg">
+                           <h1> <span class="blu">Bienvenidos<br></span>PetVentas</h1>
+                           <figure>
+                              <img src="images/FACADE.png" alt="#" style="width: 600px; height: 530px;">
+                           </figure>
+                           <a class="read_more" href="#">Mas info</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="text-bg">
+                           <h1> <span class="blu">Nuestras Instalaciones <br></span>PetVentas</h1>
+                           <figure>
+                              <img src="images/Vista Interior.png" alt="#" style="width: 600px; height: 530px;">
+                           </figure>
+                           <a class="read_more" href="#">Mas info</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="text-bg">
+                           <h1> <span class="blu">Nuestra fundacion<br></span>PetVentas</h1>
+                           <figure>
+                              <img src="images/fundacion log.png" alt="#" style="width: 600px; height: 530px;">
+                           </figure>
+                           <a class="read_more" href="#">Mas info</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+         </div>
+      </section>
+      <div class="about">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="about_img">
+                     <figure><img src="images/LogoFinal_2.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="titlepage">
+                     <h2>Nosotros</h2>
+                     <p>Soy estudiante de segundo año de programacion, trabajo como nivel 2 en la gerencia de AfpHabitat (ROL DMT). Tambien soy Dj y productor, he estaod en presentaciones en vivo y tambien he ido a las competencias mas importantes de productores del país.</p>
+                  </div>
+                  <a class="read_more" href="#">Volver al Menú</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="glasses">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2>Nuestros productos !</h2>
+                     <p>
+                        "¡Cuida a tu mascota con los mejores productos, su bienestar es nuestra pasión!"
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/producto 1.jpg" alt="#"/></figure>
+                     <h3><span class="blu">$</span>50</h3>
+                     <p>Cobertor de gatos</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/producto 2.jpg" alt="#"/></figure>
+                     <h3><span class="blu">$</span>50</h3>
+                     <p>Transportador de mascotas</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/producto 3.jpg" alt="#"/></figure>
+                     <h3><span class="blu">$</span>50</h3>
+                     <p>Distribuidor de comida automatico</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/producto 4.jpg" alt="#"/></figure>
+                     <h3><span class="blu">$</span>50</h3>
+                     <p>Juguete para Gatos </p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/producto 5.jpg" alt="#"/></figure>
+                     <h3><span class="blu">$</span>50</h3>
+                     <p>Rascador</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/prodcuto 6.jpg" alt="#"/></figure>
+                     <h3><span class="blu">$</span>50</h3>
+                     <p>Huesos dentales</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/prodcuto 7.jpg" alt="#"/></figure>
+                     <h3><span class="blu">$</span>50</h3>
+                     <p>Rascador de gatos</p>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="glasses_box">
+                     <figure><img src="images/producto 8.png" alt="#"/></figure>
+                     <h3><span class="blu">$</span>50</h3>
+                     <p>Cama para gatos</p>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <a class="read_more" href="#">Para más Informacion</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--FINSECCIONVENTA  -->
+      
+      <div id="about" class="shop">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-5">
+                  <div  class="shop_img">
+                     <figure><img src="images/tienda _ main.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7 padding_right0">
+                  <div class="max_width">
+                     <div class="titlepage">
+                        <h2>Los mejores productos para tus mascotas! </h2>
+                        <p>
+                           "Nuestra pasión por las mascotas se refleja en los mejores productos que ofrecemos. Desde alimentos nutritivos hasta juguetes divertidos y cuidado de calidad, nos preocupamos por el bienestar de tus adorables compañeros. Descubre una amplia gama de opciones diseñadas para satisfacer sus necesidades y hacer que cada momento juntos sea especial. Porque en nuestra tienda, las mascotas siempre son lo primero. ¡Confía en nosotros para proporcionarles lo mejor!"</p>
+                        <a class="read_more" href="#">Ver más</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--FINSECCION COMPRA -->
+      <!--SECCION EQUIPOS -->
+      <div class="clients">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Nuestros equipo de veterinarios</h2>
+                     <p>"Cuidado excepcional, veterinarios de confianza: tu mejor opción para la salud de tus mascotas."</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide clients_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure style="width: 400px; height: 250px;">
+                                             <img src="images/vet1.jpg" alt="#">
+                                          </figure>                                          
+                                          <h3>Veterinarios zona norte </h3>
+                                          <p>Veterinarios con títulos avanzados y experiencia en investigación y publicaciones científicas. Comprometidos con la educación continua y la práctica basada en evidencia</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure style="width: 400px; height: 250px;">
+                                             <img src="images/vet2.jpg" alt="#">
+                                          </figure>  
+                                          <h3>veterinarios zona centro </h3>
+                                          <p>Veterinarios con especialidades en áreas específicas de la medicina veterinaria. Han completado programas de residencia y exámenes de certificación. Ofrecen atención altamente especializada.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure style="width: 400px; height: 250px;">
+                                             <img src="images/vet 3.jpg" alt="#">
+                                          </figure>  
+                                          <h3>Veterinarios zona sur</h3>
+                                          <p>Veterinarios con títulos de doctorado y reconocimiento en la comunidad veterinaria. Actúan como profesores e investigadores, a la vanguardia de los avances científicos. Líderes en la industria y contribuyen a la formación de futuros veterinarios.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <i class='fa fa-angle-left'></i>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <i class='fa fa-angle-right'></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- FINSECCION -->
+      <!-- CONTACTOOO -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <h3>Contactanos !</h3>
+                        </div>
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Nombre" type="type" name="Nombre"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Numero Telefonico" type="type" name="Numero Telefonico"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="type" name="Email">                          
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactusmess" placeholder="Mensaje" type="type" Message="Mensaje">
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="map_section">
+               <div id="map">
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> <U>Ubicacion</U></li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +56 1234567890</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> Mail@gmail.com</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2023 Todos los derechos reservados</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      
+      <!--MAPA CON JAVA-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         // No se me ocurrio otra parte donde poner mapa* 
+         // STGO/CHILE
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 11,
+             center: {lat: -33.45694, lng: -70.64827},
+             });
+         
+         var image = 'images/maps-and-flags.png';
+         var beachMarker = new google.maps.Marker({
+             position: {lat: 40.645037, lng: -73.880224},
+             map: map,
+             icon: image
+           });
+         }
+      </script>
+      <!-- Modifcar el api  -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+
+      <!--bayyyy   --> 
+   </body>
+</html>
+
